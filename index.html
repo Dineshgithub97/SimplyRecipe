@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simply Recipe</title>
+    <link rel="shortcut icon" href="./image/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="newstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./image/Asset 1.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <a href="tags.html" class="nav-link"> tags </a>
+          <a href="tag-template.html" class="nav-link"> recipes </a>
+
+          <div class="nav-link search">
+            <a class="btn"
+              ><input type="search" /><button>
+                <i class="fa-solid fa-magnifying-glass"></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="page">
+      <header class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>simply recipes</h1>
+            <h4>no fluff, just recipes</h4>
+          </div>
+        </div>
+      </header>
+      <section class="recipes-container">
+        <div class="tags-container">
+          <h4>recipes</h4>
+          <div class="tags-list">
+            <a href="tag-template.html">Non-Vegetarian Dishes (4)</a>
+            <a href="tag-template.html">Pancakes (4)</a>
+            <a href="tag-template.html">Pizza (2)</a>
+            <a href="tag-template.html">Salad (3)</a>
+            <a href="tag-template.html">Vegetarian Dishes (3)</a>
+            <a href="tag-template.html">Desserts (3)</a>
+          </div>
+        </div>
+        <div class="recipes-list">
+          <div class="liked">
+            <h3>Most Liked Recipes</h3>
+          </div>
+          <div class="recipe-list-favourite">
+            <a href="recipes.html" class="recipe">
+              <img
+                src="./image/recipe-images/recipe-1.jpg"
+                class="img recipe-img"
+                alt=""
+              />
+              <h5>Hot Mutton Dish</h5>
+              <p>Prep : 15min | Cook : 5min</p>
+            </a>
+            <a href="recipes.html" class="recipe">
+              <img
+                src="./image/recipe-images/recipe-2.jpg"
+                class="img recipe-img"
+                alt=""
+              />
+              <h5>Greek Ribs</h5>
+              <p>Prep : 15min | Cook : 5min</p>
+            </a>
+            <a href="recipes.html" class="recipe">
+              <img
+                src="./image/recipe-images/recipe-4.jpg"
+                class="img recipe-img"
+                alt=""
+              />
+              <h5>Banana Pancakes</h5>
+              <p>Prep : 15min | Cook : 5min</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="footer_name">
+        &copy; <span id="date"></span>
+        <span class="footer-logo">SimplyRecipes</span> Built by
+        <a href="https://www.dineshnarpache.com/">Dinesh Narpache</a>
+      </p>
+      <div class="social_icons">
+        <a href="#" class="linkdin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" class="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" class="youtube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+    </footer>
+    <script>
+      const links = getElement(".nav-links");
+      const navBtnDOM = getElement(".nav-btn");
+
+      navBtnDOM.addEventListener("click", () => {
+        links.classList.toggle("show-links");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes</title>
+    <link rel="shortcut icon" href="./image/logo.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="newstyle.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./image/Asset 1.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <a href="tags.html" class="nav-link"> tags </a>
+          <a href="tag-template.html" class="nav-link"> recipes </a>
+
+          <div class="nav-link search">
+            <a class="btn"
+              ><input type="search" /><button>
+                <i class="fa-solid fa-magnifying-glass"></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="page">
+      <section class="recipes-container">
+        <div class="final-container">
+          <div class="tags-container">
+            <h4>recipes</h4>
+            <div class="tags-list">
+              <a href="tag-template.html">Non-Vegetarian Dishes (4)</a>
+              <a href="tag-template.html">Pancakes (4)</a>
+              <a href="tag-template.html">Pizza (2)</a>
+              <a href="tag-template.html">Salad (3)</a>
+              <a href="tag-template.html">Vegetarian Dishes (3)</a>
+              <a href="tag-template.html">Desserts (3)</a>
+            </div>
+          </div>
+          <div class="final_wrapper">
+            <section class="final_image">
+              <div class="recipe_heading"><h3>Pancake</h3></div>
+              <img
+                src="./image/recipe-images/recipe_final.jpg"
+                class="final_img"
+              />
+            </section>
+            <section class="time">
+              <p class="time_space"><span>Prep:</span> 30 Minutes</p>
+              <p class="time_space"><span>Cook:</span> 50 Minutes</p>
+              <p class="time_space"><span>Makes:</span> 3 Pancake Stacks</p>
+              <p class="time_space"><span>Serves:</span> 6</p>
+              <hr />
+              <p>
+                Pancakes for breakfast are always fun, but when you want to make
+                someone feel special, this stack of pink pancakes is precisely
+                what you need. Celebrate Mother's Day, Valentine's Day,
+                Birthdays, Christmas or just because you want to show some love.
+              </p>
+            </section>
+            <section class="method">
+              <h5>method:</h5>
+              <ol>
+                <li>
+                  In a large bowl, whisk the flour, baking powder, sugar and
+                  salt together. In a large jug whisk eggs, milk, butter and
+                  vanilla
+                </li>
+                <hr />
+                <li>
+                  Make a well in the centre of the dry ingredients and whisk in
+                  milk mixture to make a smooth batter
+                </li>
+                <hr />
+                <li>
+                  Heat a large, lightly greased non-stick frying pan over medium
+                  heat. Working in batches, spoon ¼ cup of batter into the pan.
+                  Cook pancake for 1-2 minutes, until bubbles break on the
+                  surface and the underside is golden brown. Flip over and cook
+                  for 1 minute. Repeat to make 3 pancakes
+                </li>
+                <hr />
+                <li>
+                  Tint batter a pale shade of pink. Cook another 3 pancakes.
+                  Tint batter a darker shade of pink, cook another 3 pancakes.
+                  Repeat until you have 5 colours of pancakes in total
+                </li>
+                <hr />
+                <li>
+                  To serve, stack the pancakes from darkest on the bottom to
+                  lightest on the top. Serve the pancakes with berries, syrup
+                  and ice-cream
+                </li>
+              </ol>
+            </section>
+            <section class="ingredients">
+              <h5>ingredients:</h5>
+              <div>
+                <input type="checkbox" class="checkbox" id="flour" />
+                <label for="flour">2 ½ cups (375g) plain flour</label>
+              </div>
+              <div>
+                <input type="checkbox" class="checkbox" id="powder" />
+                <label for="powder">2 tablespoons baking powder</label>
+              </div>
+              <div>
+                <input type="checkbox" class="checkbox" id="sugar" />
+                <label for="sugar">2 tablespoons caster sugar</label>
+              </div>
+              <div>
+                <input type="checkbox" class="checkbox" id="salt" />
+                <label for="salt">¼ teaspoon salt</label>
+              </div>
+              <div>
+                <input type="checkbox" class="checkbox" id="egg" />
+                <label for="egg">5 eggs</label>
+              </div>
+              <div>
+                <input type="checkbox" class="checkbox" id="milk" />
+                <label for="mil">1 ¾ cups (420ml) milk</label>
+              </div>
+              <div>
+                <input type="checkbox" class="checkbox" id="butter" />
+                <label for="butter">100g unsalted butter, melted</label>
+              </div>
+              <div>
+                <input type="checkbox" class="checkbox" id="vanilla" />
+                <label for="vanilla">2 teaspoons vanilla extract</label>
+              </div>
+              <div>
+                <input type="checkbox" class="checkbox" id="color" />
+                <label for="color">Pink food colouring</label>
+              </div>
+              <div>
+                <input type="checkbox" class="checkbox" id="syrup" />
+                <label for="syrup"
+                  >Strawberries, raspberries, maple syrup</label
+                >
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="footer_name">
+        &copy; <span id="date"></span>
+        <span class="footer-logo">SimplyRecipes</span> Built by
+        <a href="https://www.dineshnarpache.com/">Dinesh Narpache</a>
+      </p>
+      <div class="social_icons">
+        <a href="#" class="linkdin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" class="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" class="youtube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
